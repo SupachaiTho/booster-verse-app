@@ -39,27 +39,20 @@ function App() {
       [devicePixelRatio]
   );
 
+    // We'll round the loading progression to a whole number to represent the
+    // percentage of the Unity Application that has loaded.
+    const loadingPercentage = Math.round(loadingProgression * 100);
+
   return (
-      <div className="App">
-          <header className="App-header">
-              <img src={logo} className="App-logo" alt="logo" />
-              <p>
-                  Edit <code>src/App.js</code> and save to reload.
-              </p>
-              <a
-                  className="App-link"
-                  href="https://reactjs.org"
-                  target="_blank"
-                  rel="noopener noreferrer"
-              >
-                  Learn React
-              </a>
-          </header>
-          <Unity
-              unityProvider={unityProvider}
-              style={{ width: 1600, height: 900 }}
-              devicePixelRatio={devicePixelRatio}
-          />
+      <div className="container">
+          {isLoaded === false && (
+              // We'll conditionally render the loading overlay if the Unity
+              // Application is not loaded.
+              <div className="loading-overlay">
+                  <p>Loading... ({loadingPercentage}%)</p>
+              </div>
+          )}
+          <Unity className="unity" unityProvider={unityProvider} />
       </div>
   );
 }
