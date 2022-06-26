@@ -1,8 +1,8 @@
 .container {
   position: relative;
   /* The container determains the size. */
-  width: 800px;
-  height: 600px;
+  width: 1600px;
+  height: 900px;
 }
 .container > .loading-overlay {
   /* We'll render the overlay on top of the Unity Application. */
