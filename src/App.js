@@ -52,7 +52,7 @@ function App() {
                   <p>Loading... ({loadingPercentage}%)</p>
               </div>
           )}
-          <Unity className="unity" style={{ width: 1600, height: 900 }} unityProvider={unityProvider} />
+          {/*<Unity className="unity" style={{ width: 1600, height: 900 }} unityProvider={unityProvider} />*/}
       </div>
   );
 }
