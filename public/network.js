@@ -16,5 +16,5 @@ Used to set the network
 43114 Avalanche Mainnet
 */
 
-window.web3NetworkId = 1;
-window.web3NetworkName = "mainnet"
+window.web3NetworkId = 80001;
+window.web3NetworkName = "Matic Testnet"
