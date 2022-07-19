@@ -48,14 +48,14 @@
     var buildUrl = "Build",
         loaderUrl = buildUrl + "/webgl.loader.js",
         config = {
-            dataUrl: buildUrl + "/webgl.data",
-            frameworkUrl: buildUrl + "/webgl.framework.js",
-            codeUrl: buildUrl + "/webgl.wasm",
-            streamingAssetsUrl: "StreamingAssets",
-            companyName: "DefaultCompany",
-            productName: "2021unity",
-            productVersion: "0.1",
             showBanner: unityShowBanner,
+            dataUrl: buildUrl + "/Build.data",
+            frameworkUrl: buildUrl + "/Build.framework.js",
+            codeUrl: buildUrl + "/Build.wasm",
+            symbolsUrl: buildUrl + "/Build.symbols.json",
+            streamingAssetsUrl: "StreamingAssets",
+            companyName: "2021unity",
+            productVersion: "1.0",
         };
     if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
         var meta = document.createElement("meta");
